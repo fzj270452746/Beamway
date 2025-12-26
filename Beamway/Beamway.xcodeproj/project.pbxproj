@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		285D01282EFEDF9800217403 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D01272EFEDF9800217403 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		285D012A2EFEDF9C00217403 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D01292EFEDF9C00217403 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		285D015D2EFEE69100217403 /* Fomduu.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D015C2EFEE69100217403 /* Fomduu.xcframework */; };
+		37559D3F772B1EB67A122011 /* Pods_Beamway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDAF5F9FBB35501388C239F /* Pods_Beamway.framework */; };
+		FE4866752EFC299900461C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE48666A2EFC299900461C05 /* Assets.xcassets */; };
+		FE4866772EFC299900461C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE48666E2EFC299900461C05 /* LaunchScreen.storyboard */; };
+		FE4866782EFC299900461C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4866702EFC299900461C05 /* Main.storyboard */; };
+		FE48667A2EFC299900461C05 /* Beamway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE48666B2EFC299900461C05 /* Beamway.xcdatamodeld */; };
+		FE4866882EFD6E0F00461C05 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */; };
+		FE4866892EFD6E0F00461C05 /* ArrowProjectileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667E2EFD6E0F00461C05 /* ArrowProjectileView.swift */; };
+		FE48668A2EFD6E0F00461C05 /* GameRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */; };
+		FE48668B2EFD6E0F00461C05 /* GameModeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */; };
+		FE48668C2EFD6E0F00461C05 /* GameRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */; };
+		FE48668D2EFD6E0F00461C05 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667F2EFD6E0F00461C05 /* CustomBackButton.swift */; };
+		FE48668E2EFD6E0F00461C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667D2EFD6E0F00461C05 /* AppDelegate.swift */; };
+		FE48668F2EFD6E0F00461C05 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */; };
+		FE4866902EFD6E0F00461C05 /* MahjongTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866842EFD6E0F00461C05 /* MahjongTileView.swift */; };
+		FE4866912EFD6E0F00461C05 /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */; };
+		FE4866922EFD6E0F00461C05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866862EFD6E0F00461C05 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		285D01272EFEDF9800217403 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		285D01292EFEDF9C00217403 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		285D015C2EFEE69100217403 /* Fomduu.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Fomduu.xcframework; sourceTree = "<group>"; };
+		8CDAF5F9FBB35501388C239F /* Pods_Beamway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beamway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46ECC1DEEA91D467010BA8F /* Pods-Beamway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beamway.debug.xcconfig"; path = "Target Support Files/Pods-Beamway/Pods-Beamway.debug.xcconfig"; sourceTree = "<group>"; };
+		E8E14EF658B02203784168D0 /* Pods-Beamway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beamway.release.xcconfig"; path = "Target Support Files/Pods-Beamway/Pods-Beamway.release.xcconfig"; sourceTree = "<group>"; };
+		FE48664E2EFC297B00461C05 /* Beamway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beamway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE48666A2EFC299900461C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE48666C2EFC299900461C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE48666D2EFC299900461C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE48666F2EFC299900461C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE4866742EFC299900461C05 /* Beamway.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beamway.xcdatamodel; sourceTree = "<group>"; };
+		FE48667D2EFD6E0F00461C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE48667E2EFD6E0F00461C05 /* ArrowProjectileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowProjectileView.swift; sourceTree = "<group>"; };
+		FE48667F2EFD6E0F00461C05 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeSelectionViewController.swift; sourceTree = "<group>"; };
+		FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordManager.swift; sourceTree = "<group>"; };
+		FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordsViewController.swift; sourceTree = "<group>"; };
+		FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
+		FE4866842EFD6E0F00461C05 /* MahjongTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahjongTileView.swift; sourceTree = "<group>"; };
+		FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewController.swift; sourceTree = "<group>"; };
+		FE4866862EFD6E0F00461C05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE48664B2EFC297B00461C05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285D012A2EFEDF9C00217403 /* AdSupport.framework in Frameworks */,
+				285D015D2EFEE69100217403 /* Fomduu.xcframework in Frameworks */,
+				285D01282EFEDF9800217403 /* AdServices.framework in Frameworks */,
+				37559D3F772B1EB67A122011 /* Pods_Beamway.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		976F76435C2E56D64C8B6A28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A46ECC1DEEA91D467010BA8F /* Pods-Beamway.debug.xcconfig */,
+				E8E14EF658B02203784168D0 /* Pods-Beamway.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A848E9A9450285F163CB3DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				285D01292EFEDF9C00217403 /* AdSupport.framework */,
+				285D01272EFEDF9800217403 /* AdServices.framework */,
+				8CDAF5F9FBB35501388C239F /* Pods_Beamway.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE052CF02EFE8C910061138D /* GameRecord */ = {
+			isa = PBXGroup;
+			children = (
+				FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */,
+				FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */,
+			);
+			path = GameRecord;
+			sourceTree = "<group>";
+		};
+		FE052CF12EFE8C940061138D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		FE052CF22EFE8C960061138D /* MainGame */ = {
+			isa = PBXGroup;
+			children = (
+				FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */,
+			);
+			path = MainGame;
+			sourceTree = "<group>";
+		};
+		FE052CF32EFE8CAD0061138D /* GameRules */ = {
+			isa = PBXGroup;
+			children = (
+				FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */,
+			);
+			path = GameRules;
+			sourceTree = "<group>";
+		};
+		FE052CF42EFE8CC60061138D /* ModeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */,
+			);
+			path = ModeSelection;
+			sourceTree = "<group>";
+		};
+		FE4866452EFC297B00461C05 = {
+			isa = PBXGroup;
+			children = (
+				FE4866732EFC299900461C05 /* Beamway */,
+				FE48664F2EFC297B00461C05 /* Products */,
+				976F76435C2E56D64C8B6A28 /* Pods */,
+				A848E9A9450285F163CB3DA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE48664F2EFC297B00461C05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE48664E2EFC297B00461C05 /* Beamway.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE4866732EFC299900461C05 /* Beamway */ = {
+			isa = PBXGroup;
+			children = (
+				FE48666A2EFC299900461C05 /* Assets.xcassets */,
+				FE48666B2EFC299900461C05 /* Beamway.xcdatamodeld */,
+				FE48666C2EFC299900461C05 /* Info.plist */,
+				FE48666E2EFC299900461C05 /* LaunchScreen.storyboard */,
+				FE4866702EFC299900461C05 /* Main.storyboard */,
+				FE48667D2EFD6E0F00461C05 /* AppDelegate.swift */,
+				FE4866862EFD6E0F00461C05 /* SceneDelegate.swift */,
+				FE48667E2EFD6E0F00461C05 /* ArrowProjectileView.swift */,
+				285D015C2EFEE69100217403 /* Fomduu.xcframework */,
+				FE48667F2EFD6E0F00461C05 /* CustomBackButton.swift */,
+				FE4866842EFD6E0F00461C05 /* MahjongTileView.swift */,
+				FE052CF02EFE8C910061138D /* GameRecord */,
+				FE052CF22EFE8C960061138D /* MainGame */,
+				FE052CF12EFE8C940061138D /* Welcome */,
+				FE052CF32EFE8CAD0061138D /* GameRules */,
+				FE052CF42EFE8CC60061138D /* ModeSelection */,
+			);
+			path = Beamway;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE48664D2EFC297B00461C05 /* Beamway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4866642EFC297D00461C05 /* Build configuration list for PBXNativeTarget "Beamway" */;
+			buildPhases = (
+				910BBC2EED4246CC635EBCA6 /* [CP] Check Pods Manifest.lock */,
+				FE48664A2EFC297B00461C05 /* Sources */,
+				FE48664B2EFC297B00461C05 /* Frameworks */,
+				FE48664C2EFC297B00461C05 /* Resources */,
+				B884098330A2E42B5BE34896 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beamway;
+			productName = Beamway;
+			productReference = FE48664E2EFC297B00461C05 /* Beamway.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE4866462EFC297B00461C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					FE48664D2EFC297B00461C05 = {
+						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
+					};
+				};
+			};
+			buildConfigurationList = FE4866492EFC297B00461C05 /* Build configuration list for PBXProject "Beamway" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE4866452EFC297B00461C05;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FE48664F2EFC297B00461C05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE48664D2EFC297B00461C05 /* Beamway */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE48664C2EFC297B00461C05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4866752EFC299900461C05 /* Assets.xcassets in Resources */,
+				FE4866772EFC299900461C05 /* LaunchScreen.storyboard in Resources */,
+				FE4866782EFC299900461C05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		910BBC2EED4246CC635EBCA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beamway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B884098330A2E42B5BE34896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beamway/Pods-Beamway-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beamway/Pods-Beamway-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beamway/Pods-Beamway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE48664A2EFC297B00461C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE48667A2EFC299900461C05 /* Beamway.xcdatamodeld in Sources */,
+				FE4866882EFD6E0F00461C05 /* WelcomeViewController.swift in Sources */,
+				FE4866892EFD6E0F00461C05 /* ArrowProjectileView.swift in Sources */,
+				FE48668A2EFD6E0F00461C05 /* GameRecordsViewController.swift in Sources */,
+				FE48668B2EFD6E0F00461C05 /* GameModeSelectionViewController.swift in Sources */,
+				FE48668C2EFD6E0F00461C05 /* GameRecordManager.swift in Sources */,
+				FE48668D2EFD6E0F00461C05 /* CustomBackButton.swift in Sources */,
+				FE48668E2EFD6E0F00461C05 /* AppDelegate.swift in Sources */,
+				FE48668F2EFD6E0F00461C05 /* GameRulesViewController.swift in Sources */,
+				FE4866902EFD6E0F00461C05 /* MahjongTileView.swift in Sources */,
+				FE4866912EFD6E0F00461C05 /* MainGameViewController.swift in Sources */,
+				FE4866922EFD6E0F00461C05 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE48666E2EFC299900461C05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE48666D2EFC299900461C05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FE4866702EFC299900461C05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE48666F2EFC299900461C05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE4866652EFC297D00461C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46ECC1DEEA91D467010BA8F /* Pods-Beamway.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Beamway/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Beamway";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.Beamway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FE4866662EFC297D00461C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E14EF658B02203784168D0 /* Pods-Beamway.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Beamway/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mahjong Beamway";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We will use your data to enhance your user experience and provide personalized advertising services";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bws.Beamway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FE4866672EFC297D00461C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE4866682EFC297D00461C05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE4866492EFC297B00461C05 /* Build configuration list for PBXProject "Beamway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4866672EFC297D00461C05 /* Debug */,
+				FE4866682EFC297D00461C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4866642EFC297D00461C05 /* Build configuration list for PBXNativeTarget "Beamway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4866652EFC297D00461C05 /* Debug */,
+				FE4866662EFC297D00461C05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE48666B2EFC299900461C05 /* Beamway.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE4866742EFC299900461C05 /* Beamway.xcdatamodel */,
+			);
+			currentVersion = FE4866742EFC299900461C05 /* Beamway.xcdatamodel */;
+			path = Beamway.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE4866462EFC297B00461C05 /* Project object */;
+}
