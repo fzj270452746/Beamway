@@ -1,5 +1,5 @@
 //
-//  GameRecordManager.swift
+//  MatchHistoryHandler.swift
 //  Beamway
 //
 //  Created by Zhao on 2025/12/24.
@@ -8,119 +8,119 @@
 import UIKit
 import CoreData
 
-class GameRecordManager {
-    
-    static let sharedInstance = GameRecordManager()
-    
+class MatchHistoryHandler {
+
+    static let globalHandler = MatchHistoryHandler()
+
     private init() {}
-    
-    private var persistentContainer: NSPersistentContainer {
+
+    private var persistentStorage: NSPersistentContainer {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             fatalError("Unable to access AppDelegate")
         }
         return appDelegate.persistentContainer
     }
-    
-    private var context: NSManagedObjectContext {
-        return persistentContainer.viewContext
+
+    private var dataContext: NSManagedObjectContext {
+        return persistentStorage.viewContext
     }
-    
+
     // MARK: - Save Game Record
-    
-    func saveGameRecord(score: Int, mode: String, date: Date = Date()) {
-        let entityDescription = NSEntityDescription.entity(forEntityName: "GameRecordEntity", in: context)!
-        let recordObject = NSManagedObject(entity: entityDescription, insertInto: context)
-        
-        recordObject.setValue(score, forKey: "scoreValue")
-        recordObject.setValue(mode, forKey: "gameMode")
-        recordObject.setValue(date, forKey: "recordDate")
-        recordObject.setValue(UUID().uuidString, forKey: "recordIdentifier")
-        
+
+    func storeMatchHistory(points: Int, category: String, timestamp: Date = Date()) {
+        let entityDescription = NSEntityDescription.entity(forEntityName: "GameRecordEntity", in: dataContext)!
+        let historyObject = NSManagedObject(entity: entityDescription, insertInto: dataContext)
+
+        historyObject.setValue(points, forKey: "scoreValue")
+        historyObject.setValue(category, forKey: "gameMode")
+        historyObject.setValue(timestamp, forKey: "recordDate")
+        historyObject.setValue(UUID().uuidString, forKey: "recordIdentifier")
+
         do {
-            try context.save()
+            try dataContext.save()
         } catch {
         }
     }
-    
+
     // MARK: - Save Longest Time Record
-    
-    func saveLongestTimeRecord(time: TimeInterval, mode: String) {
+
+    func storePeakDurationHistory(duration: TimeInterval, category: String) {
         let userDefaults = UserDefaults.standard
-        let key = "longestTime_\(mode)"
-        
+        let key = "longestTime_\(category)"
+
         // Get current longest time
-        let currentLongest = userDefaults.double(forKey: key)
-        
+        let currentPeak = userDefaults.double(forKey: key)
+
         // Save if this is longer
-        if time > currentLongest {
-            userDefaults.set(time, forKey: key)
+        if duration > currentPeak {
+            userDefaults.set(duration, forKey: key)
             userDefaults.synchronize()
         }
     }
-    
+
     // MARK: - Get Longest Time Record
-    
-    func getLongestTimeRecord(mode: String) -> TimeInterval {
+
+    func retrievePeakDurationHistory(category: String) -> TimeInterval {
         let userDefaults = UserDefaults.standard
-        let key = "longestTime_\(mode)"
+        let key = "longestTime_\(category)"
         return userDefaults.double(forKey: key)
     }
-    
-    func getFormattedLongestTime(mode: String) -> String {
-        let time = getLongestTimeRecord(mode: mode)
-        if time > 0 {
-            let minutes = Int(time) / 60
-            let seconds = Int(time) % 60
+
+    func obtainFormattedPeakDuration(category: String) -> String {
+        let duration = retrievePeakDurationHistory(category: category)
+        if duration > 0 {
+            let minutes = Int(duration) / 60
+            let seconds = Int(duration) % 60
             return String(format: "%d:%02d", minutes, seconds)
         }
         return "N/A"
     }
-    
+
     // MARK: - Fetch Game Records
-    
-    func fetchAllGameRecords() -> [GameRecordModel] {
+
+    func retrieveAllMatchHistories() -> [MatchHistoryData] {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "GameRecordEntity")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "recordDate", ascending: false)]
-        
+
         do {
-            let records = try context.fetch(fetchRequest)
-            return records.map { record in
-                GameRecordModel(
-                    identifier: record.value(forKey: "recordIdentifier") as? String ?? "",
-                    score: record.value(forKey: "scoreValue") as? Int ?? 0,
-                    mode: record.value(forKey: "gameMode") as? String ?? "",
-                    date: record.value(forKey: "recordDate") as? Date ?? Date()
+            let histories = try dataContext.fetch(fetchRequest)
+            return histories.map { history in
+                MatchHistoryData(
+                    uniqueId: history.value(forKey: "recordIdentifier") as? String ?? "",
+                    points: history.value(forKey: "scoreValue") as? Int ?? 0,
+                    category: history.value(forKey: "gameMode") as? String ?? "",
+                    timestamp: history.value(forKey: "recordDate") as? Date ?? Date()
                 )
             }
         } catch {
             return []
         }
     }
-    
+
     // MARK: - Delete Game Record
-    
-    func deleteGameRecord(identifier: String) {
+
+    func removeMatchHistory(uniqueId: String) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "GameRecordEntity")
-        fetchRequest.predicate = NSPredicate(format: "recordIdentifier == %@", identifier)
-        
+        fetchRequest.predicate = NSPredicate(format: "recordIdentifier == %@", uniqueId)
+
         do {
-            let records = try context.fetch(fetchRequest)
-            records.forEach { context.delete($0) }
-            try context.save()
+            let histories = try dataContext.fetch(fetchRequest)
+            histories.forEach { dataContext.delete($0) }
+            try dataContext.save()
         } catch {
             print("Failed to delete game record: \(error.localizedDescription)")
         }
     }
-    
+
     // MARK: - Delete All Game Records
-    
-    func deleteAllGameRecords() {
+
+    func removeAllMatchHistories() {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "GameRecordEntity")
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        
+
         do {
-            try context.execute(deleteRequest)
-            try context.save()
+            try dataContext.execute(deleteRequest)
+            try dataContext.save()
         } catch {
             print("Failed to delete all game records: \(error.localizedDescription)")
         }
@@ -129,17 +129,17 @@ class GameRecordManager {
 
 // MARK: - Game Record Model
 
-struct GameRecordModel {
-    let identifier: String
-    let score: Int
-    let mode: String
-    let date: Date
-    
-    var formattedDate: String {
+struct MatchHistoryData {
+    let uniqueId: String
+    let points: Int
+    let category: String
+    let timestamp: Date
+
+    var displayableTimestamp: String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .short
-        return formatter.string(from: date)
+        return formatter.string(from: timestamp)
     }
 }
 

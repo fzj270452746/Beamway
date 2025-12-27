@@ -10,8 +10,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        let welcomeViewController = WelcomeViewController()
-        window?.rootViewController = welcomeViewController
+        let greetingController = GreetingPanelController()
+        window?.rootViewController = greetingController
         window?.makeKeyAndVisible()
     }
 

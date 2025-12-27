@@ -7,34 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C99B3A6FCC22139FCF4104 /* TouchFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C73C29F6422FD379B5B318E /* TouchFeedbackController.swift */; };
+		0C7BE9B5470AF9CC8C4020E2 /* CollisionProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E65D9EB147F9E4D20BE93 /* CollisionProcessingEngine.swift */; };
+		0D49200A08172E319A2C0519 /* RecordsScreenConfigurators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561051C5CAAEEAFE0CA31F30 /* RecordsScreenConfigurators.swift */; };
+		195870734F8A65E01A253F9C /* BackdropConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E240E0B24344CBF77FB382 /* BackdropConfigurator.swift */; };
+		1F8F6A24C5D8D2A4481DD50F /* WelcomeScreenAnimationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2B024B080F708F02DA040 /* WelcomeScreenAnimationCoordinator.swift */; };
+		231CB71174C46BB3551FE0C3 /* GuidelinesDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01889D28AC0CF30D56DFA442 /* GuidelinesDisplayController.swift */; };
 		285D01282EFEDF9800217403 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D01272EFEDF9800217403 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		285D012A2EFEDF9C00217403 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D01292EFEDF9C00217403 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		285D015D2EFEE69100217403 /* Fomduu.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D015C2EFEE69100217403 /* Fomduu.xcframework */; };
+		288C5F441E5FBAFA80221D22 /* PauseOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B186F38FF3E373DEE7BE22 /* PauseOverlayController.swift */; };
+		2B2D2F6C6D6880FF0DE1E2D3 /* CollisionDetectionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3FC80D8CCF3415FA85C10 /* CollisionDetectionEngine.swift */; };
 		37559D3F772B1EB67A122011 /* Pods_Beamway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDAF5F9FBB35501388C239F /* Pods_Beamway.framework */; };
+		38FC6C3EDCC893438C0E9E28 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D21F194DD08CF7A75B5D9 /* UIViewExtensions.swift */; };
+		3BE8C746271B69BC31C840EA /* SessionHeadsUpDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D09258998348EFD12CFCFE /* SessionHeadsUpDisplayManager.swift */; };
+		3FF1FE5EEF40D93493501FD5 /* RecordsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6AB515E2C0E069FD7519D /* RecordsDataManager.swift */; };
+		4422DF0FA4D3CD0F6A2FE3B1 /* RulesContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E4B00CDE9438C7155F58F0 /* RulesContentBuilder.swift */; };
+		4B3D361E60290839854E7923 /* RulesScreenConfigurators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38181470A1D6A5172281CC5D /* RulesScreenConfigurators.swift */; };
+		4BBDDF746D18F6EFDB3111A8 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84341B672F456A537E80804 /* ApplicationEnvironment.swift */; };
+		4D32B5BE07B518CD682690ED /* PlayZoneContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76521566053DDC40A6BB1FC7 /* PlayZoneContainerView.swift */; };
+		4E5093B56852F8ED9AD8B439 /* ScoringProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E944D8C295277051EB9C750 /* ScoringProcessingEngine.swift */; };
+		4E8A7F8AFC6B0A115263CE4F /* ProjectileEntityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E5C52AEE6C6208C7210A4 /* ProjectileEntityController.swift */; };
+		512A80DC60D52E07A052EF4A /* MotionEffectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E770D7EAE0CDBFA5FDB5680 /* MotionEffectsCoordinator.swift */; };
+		5142876160C4AB206AADD152 /* RulesUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B579693E4441FF61A63C68 /* RulesUIComponents.swift */; };
+		60778FFEBC780FB6B2910552 /* GameVisualEffectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F9F0BE267A7563D01AECD4 /* GameVisualEffectsCoordinator.swift */; };
+		6197DA2C0C23105AF8983D98 /* GameControlButtonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC9A073FBA05E8A21BD90 /* GameControlButtonsManager.swift */; };
+		6A126A9F2597CDA3EB47D23F /* GameplayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFA99EB6A6FB09E7B5783B /* GameplayProtocols.swift */; };
+		6C6BEA2B2DBB19C0C0D6C7F3 /* SessionResultDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4919B4126FF2A549AA8F8A /* SessionResultDataModel.swift */; };
+		6D732CB9C93032BE60763785 /* ProjectileSpawningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AF1323742F68A32549FD2 /* ProjectileSpawningController.swift */; };
+		706A85457B039816198A28D0 /* GameOverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1197427A231748E370D2049 /* GameOverPresentationController.swift */; };
+		76619C24E49E358AB4EA0305 /* ViewComponentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7321906238D8677C2D44F167 /* ViewComponentProtocols.swift */; };
+		7ACD0D47E642B67FD5B98587 /* RecordsUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D169758000FCBD6167B86D7 /* RecordsUIComponents.swift */; };
+		7F0F7A83E7A38625C73A34AB /* MatchHistoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DD621287B061F45D19EFD /* MatchHistoriesController.swift */; };
+		82B7F5C31560798767EBFE21 /* WelcomeScreenConfigurators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E430AA43EE64CA2149B0DF0D /* WelcomeScreenConfigurators.swift */; };
+		83750D66CEDC995126729C8F /* GameLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8069D670742D22B29C1B4405 /* GameLogicController.swift */; };
+		85F89D74B3688B42E2B8B5F1 /* CategoryTilePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFB42D499670B708A3537B /* CategoryTilePanel.swift */; };
+		86F787B4F5B823C7BEFEACF2 /* GameplayConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF4E27CBA1D37BEBA888AE /* GameplayConstants.swift */; };
+		8870479CD47CAC5F4C9349B9 /* RecordsAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91AE8F50C56C4DE81C8B2BD /* RecordsAnimationController.swift */; };
+		8B620C75749EF6BC9F3176AF /* BackgroundSceneRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB6013845A0EAA9A09405C /* BackgroundSceneRenderer.swift */; };
+		8E389F1D64A73E8D0F39FD86 /* ModeSelectionAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DA4619761042F3E7089260 /* ModeSelectionAnimationController.swift */; };
+		9239E59A64F963233E1C0766 /* CategoryPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BBE448AF278716DD16B012 /* CategoryPickerController.swift */; };
+		9249CEC7E08F3BE886658021 /* BlockEntityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AAC22271CCF192ACA79ADD /* BlockEntityController.swift */; };
+		9B9B3AB8BE04A2694E8CD2B0 /* GameSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8996397CBC0AC71815917921 /* GameSessionViewModel.swift */; };
+		A02734F4C8DD3691C0744BA0 /* FooterControlsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB35852110F18A5C78B2EBF /* FooterControlsConfigurator.swift */; };
+		A3C32F64CB64B35852E8C6F7 /* WelcomeMetricsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B57B723E2E36E8D73184C /* WelcomeMetricsDataProvider.swift */; };
+		A46DC262699BC79C172D0074 /* CoordinatorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E68BEF67B9A732CB7BF7AA /* CoordinatorBase.swift */; };
+		A7026F672A6247C283E94B66 /* GameplayOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781719C472AAA97BFBD7772A /* GameplayOrchestrator.swift */; };
+		AAC6EB40AF93D2E9D56206A8 /* ModeSelectionUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F19D2A880055230F63AE6B /* ModeSelectionUIComponents.swift */; };
+		AE60CAEDACE12A265DF01209 /* GreetingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9D04BD4C396D232BB737B /* GreetingPanelController.swift */; };
+		C83C68F3E71D74C5D12D50D0 /* GameSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717473317A9E13985FC1F1B /* GameSessionCoordinator.swift */; };
+		C9A6736CE741F6F264E2FB30 /* ModeSelectionConfigurators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B836875D0B40FBE0C79E2FE /* ModeSelectionConfigurators.swift */; };
+		CCE06AEEFD744AE1A0E651EF /* GameOverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049E95BEB48EFF290E8695F /* GameOverlayPresentationController.swift */; };
+		CEBEFEA9021401A0CAFD21AB /* VisualThemeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E703D5CF393AFF9F1D29D24 /* VisualThemeConfiguration.swift */; };
+		D5CFF41E16D67F6EF3DC1040 /* MatchHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516062E7819248FFEC17F36 /* MatchHistoryItem.swift */; };
+		D9A615FE87AFA8FE85267A33 /* PlaySessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DEE88E2E009DE0BD3F268 /* PlaySessionController.swift */; };
+		D9E2E20C7BEC432F1CA4786D /* SessionRecordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F793109110400F0F69F7CDE1 /* SessionRecordRepository.swift */; };
+		DBAEAE5726E5F21B33736751 /* RulesAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B8DAE0F8966D9370BC9411 /* RulesAnimationController.swift */; };
+		EE97173BE0DB7F36171B890D /* PlayZoneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A17E124659F7E799B1D58F /* PlayZoneConfigurator.swift */; };
+		FAE3DC2773A84ED649E4BFBF /* WelcomeUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7789CA3C5612A0F93684D15 /* WelcomeUIComponents.swift */; };
+		FD4DB9C2318835C318137893 /* GameHUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B3AD5300E76FDD561CC6E /* GameHUDManager.swift */; };
 		FE4866752EFC299900461C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE48666A2EFC299900461C05 /* Assets.xcassets */; };
 		FE4866772EFC299900461C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE48666E2EFC299900461C05 /* LaunchScreen.storyboard */; };
 		FE4866782EFC299900461C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4866702EFC299900461C05 /* Main.storyboard */; };
 		FE48667A2EFC299900461C05 /* Beamway.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE48666B2EFC299900461C05 /* Beamway.xcdatamodeld */; };
-		FE4866882EFD6E0F00461C05 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */; };
 		FE4866892EFD6E0F00461C05 /* ArrowProjectileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667E2EFD6E0F00461C05 /* ArrowProjectileView.swift */; };
-		FE48668A2EFD6E0F00461C05 /* GameRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */; };
-		FE48668B2EFD6E0F00461C05 /* GameModeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */; };
 		FE48668C2EFD6E0F00461C05 /* GameRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */; };
 		FE48668D2EFD6E0F00461C05 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667F2EFD6E0F00461C05 /* CustomBackButton.swift */; };
 		FE48668E2EFD6E0F00461C05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE48667D2EFD6E0F00461C05 /* AppDelegate.swift */; };
-		FE48668F2EFD6E0F00461C05 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */; };
 		FE4866902EFD6E0F00461C05 /* MahjongTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866842EFD6E0F00461C05 /* MahjongTileView.swift */; };
-		FE4866912EFD6E0F00461C05 /* MainGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */; };
 		FE4866922EFD6E0F00461C05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4866862EFD6E0F00461C05 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01889D28AC0CF30D56DFA442 /* GuidelinesDisplayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GuidelinesDisplayController.swift; sourceTree = "<group>"; };
+		0E944D8C295277051EB9C750 /* ScoringProcessingEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScoringProcessingEngine.swift; sourceTree = "<group>"; };
+		115DD621287B061F45D19EFD /* MatchHistoriesController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistoriesController.swift; sourceTree = "<group>"; };
+		1D169758000FCBD6167B86D7 /* RecordsUIComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordsUIComponents.swift; sourceTree = "<group>"; };
+		21E4B00CDE9438C7155F58F0 /* RulesContentBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RulesContentBuilder.swift; sourceTree = "<group>"; };
 		285D01272EFEDF9800217403 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		285D01292EFEDF9C00217403 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		285D015C2EFEE69100217403 /* Fomduu.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Fomduu.xcframework; sourceTree = "<group>"; };
+		2DFFB42D499670B708A3537B /* CategoryTilePanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoryTilePanel.swift; sourceTree = "<group>"; };
+		33F9F0BE267A7563D01AECD4 /* GameVisualEffectsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameVisualEffectsCoordinator.swift; sourceTree = "<group>"; };
+		3717473317A9E13985FC1F1B /* GameSessionCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameSessionCoordinator.swift; sourceTree = "<group>"; };
+		38181470A1D6A5172281CC5D /* RulesScreenConfigurators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RulesScreenConfigurators.swift; sourceTree = "<group>"; };
+		3AF9D04BD4C396D232BB737B /* GreetingPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GreetingPanelController.swift; sourceTree = "<group>"; };
+		3B836875D0B40FBE0C79E2FE /* ModeSelectionConfigurators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModeSelectionConfigurators.swift; sourceTree = "<group>"; };
+		3E703D5CF393AFF9F1D29D24 /* VisualThemeConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VisualThemeConfiguration.swift; sourceTree = "<group>"; };
+		46A17E124659F7E799B1D58F /* PlayZoneConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayZoneConfigurator.swift; sourceTree = "<group>"; };
+		48B186F38FF3E373DEE7BE22 /* PauseOverlayController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PauseOverlayController.swift; sourceTree = "<group>"; };
+		50BBE448AF278716DD16B012 /* CategoryPickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoryPickerController.swift; sourceTree = "<group>"; };
+		525E65D9EB147F9E4D20BE93 /* CollisionProcessingEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollisionProcessingEngine.swift; sourceTree = "<group>"; };
+		561051C5CAAEEAFE0CA31F30 /* RecordsScreenConfigurators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordsScreenConfigurators.swift; sourceTree = "<group>"; };
+		5F4919B4126FF2A549AA8F8A /* SessionResultDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionResultDataModel.swift; sourceTree = "<group>"; };
+		659B3AD5300E76FDD561CC6E /* GameHUDManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameHUDManager.swift; sourceTree = "<group>"; };
+		69DA4619761042F3E7089260 /* ModeSelectionAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModeSelectionAnimationController.swift; sourceTree = "<group>"; };
+		6E770D7EAE0CDBFA5FDB5680 /* MotionEffectsCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MotionEffectsCoordinator.swift; sourceTree = "<group>"; };
+		70B579693E4441FF61A63C68 /* RulesUIComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RulesUIComponents.swift; sourceTree = "<group>"; };
+		70F19D2A880055230F63AE6B /* ModeSelectionUIComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModeSelectionUIComponents.swift; sourceTree = "<group>"; };
+		71EF4E27CBA1D37BEBA888AE /* GameplayConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameplayConstants.swift; sourceTree = "<group>"; };
+		7321906238D8677C2D44F167 /* ViewComponentProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewComponentProtocols.swift; sourceTree = "<group>"; };
+		76521566053DDC40A6BB1FC7 /* PlayZoneContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayZoneContainerView.swift; sourceTree = "<group>"; };
+		781719C472AAA97BFBD7772A /* GameplayOrchestrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameplayOrchestrator.swift; sourceTree = "<group>"; };
+		7C73C29F6422FD379B5B318E /* TouchFeedbackController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TouchFeedbackController.swift; sourceTree = "<group>"; };
+		8069D670742D22B29C1B4405 /* GameLogicController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameLogicController.swift; sourceTree = "<group>"; };
+		84DB6013845A0EAA9A09405C /* BackgroundSceneRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackgroundSceneRenderer.swift; sourceTree = "<group>"; };
+		8516062E7819248FFEC17F36 /* MatchHistoryItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistoryItem.swift; sourceTree = "<group>"; };
+		8996397CBC0AC71815917921 /* GameSessionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameSessionViewModel.swift; sourceTree = "<group>"; };
 		8CDAF5F9FBB35501388C239F /* Pods_Beamway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beamway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B6AB515E2C0E069FD7519D /* RecordsDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordsDataManager.swift; sourceTree = "<group>"; };
+		95D09258998348EFD12CFCFE /* SessionHeadsUpDisplayManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionHeadsUpDisplayManager.swift; sourceTree = "<group>"; };
+		9B6AF1323742F68A32549FD2 /* ProjectileSpawningController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProjectileSpawningController.swift; sourceTree = "<group>"; };
+		A1197427A231748E370D2049 /* GameOverPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameOverPresentationController.swift; sourceTree = "<group>"; };
 		A46ECC1DEEA91D467010BA8F /* Pods-Beamway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beamway.debug.xcconfig"; path = "Target Support Files/Pods-Beamway/Pods-Beamway.debug.xcconfig"; sourceTree = "<group>"; };
+		B34D21F194DD08CF7A75B5D9 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B74B57B723E2E36E8D73184C /* WelcomeMetricsDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeMetricsDataProvider.swift; sourceTree = "<group>"; };
+		B7789CA3C5612A0F93684D15 /* WelcomeUIComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeUIComponents.swift; sourceTree = "<group>"; };
+		B7A3FC80D8CCF3415FA85C10 /* CollisionDetectionEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollisionDetectionEngine.swift; sourceTree = "<group>"; };
+		B7E68BEF67B9A732CB7BF7AA /* CoordinatorBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoordinatorBase.swift; sourceTree = "<group>"; };
+		C7E240E0B24344CBF77FB382 /* BackdropConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackdropConfigurator.swift; sourceTree = "<group>"; };
+		CEB35852110F18A5C78B2EBF /* FooterControlsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FooterControlsConfigurator.swift; sourceTree = "<group>"; };
+		CFB2B024B080F708F02DA040 /* WelcomeScreenAnimationCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeScreenAnimationCoordinator.swift; sourceTree = "<group>"; };
+		D049E95BEB48EFF290E8695F /* GameOverlayPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameOverlayPresentationController.swift; sourceTree = "<group>"; };
+		D4AAC22271CCF192ACA79ADD /* BlockEntityController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlockEntityController.swift; sourceTree = "<group>"; };
+		DD6BC9A073FBA05E8A21BD90 /* GameControlButtonsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameControlButtonsManager.swift; sourceTree = "<group>"; };
+		E2FFA99EB6A6FB09E7B5783B /* GameplayProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameplayProtocols.swift; sourceTree = "<group>"; };
+		E430AA43EE64CA2149B0DF0D /* WelcomeScreenConfigurators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WelcomeScreenConfigurators.swift; sourceTree = "<group>"; };
+		E6B8DAE0F8966D9370BC9411 /* RulesAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RulesAnimationController.swift; sourceTree = "<group>"; };
 		E8E14EF658B02203784168D0 /* Pods-Beamway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beamway.release.xcconfig"; path = "Target Support Files/Pods-Beamway/Pods-Beamway.release.xcconfig"; sourceTree = "<group>"; };
+		F59E5C52AEE6C6208C7210A4 /* ProjectileEntityController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProjectileEntityController.swift; sourceTree = "<group>"; };
+		F75DEE88E2E009DE0BD3F268 /* PlaySessionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaySessionController.swift; sourceTree = "<group>"; };
+		F793109110400F0F69F7CDE1 /* SessionRecordRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionRecordRepository.swift; sourceTree = "<group>"; };
+		F84341B672F456A537E80804 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
+		F91AE8F50C56C4DE81C8B2BD /* RecordsAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecordsAnimationController.swift; sourceTree = "<group>"; };
 		FE48664E2EFC297B00461C05 /* Beamway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beamway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE48666A2EFC299900461C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE48666C2EFC299900461C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,14 +149,9 @@
 		FE48667D2EFD6E0F00461C05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE48667E2EFD6E0F00461C05 /* ArrowProjectileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowProjectileView.swift; sourceTree = "<group>"; };
 		FE48667F2EFD6E0F00461C05 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
-		FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeSelectionViewController.swift; sourceTree = "<group>"; };
 		FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordManager.swift; sourceTree = "<group>"; };
-		FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecordsViewController.swift; sourceTree = "<group>"; };
-		FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
 		FE4866842EFD6E0F00461C05 /* MahjongTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahjongTileView.swift; sourceTree = "<group>"; };
-		FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewController.swift; sourceTree = "<group>"; };
 		FE4866862EFD6E0F00461C05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +169,270 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013D769AEF7CD1EABBE6FAD5 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				470172ED35BB6EECA4963E59 /* Configurators */,
+				70C034C4259CB5171958FC44 /* Components */,
+				97D0465FE093151832E7C6B2 /* Controllers */,
+				2B6E25D615F3CE1B9C7A0331 /* Services */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		03250F4553A8D99BF20A781D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F793109110400F0F69F7CDE1 /* SessionRecordRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		074BE1466775B03097CF671F /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				95D09258998348EFD12CFCFE /* SessionHeadsUpDisplayManager.swift */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		17828335D0236F1EC2653CA8 /* GameRecord */ = {
+			isa = PBXGroup;
+			children = (
+				E63819B3B8C323C3431C4161 /* Configurators */,
+				D03CB2CA097F1246F152D1BD /* Components */,
+				4686EFF7B7958E753CD9E37C /* Controllers */,
+				F060F286844E4A03DAFDCAD7 /* Services */,
+			);
+			path = GameRecord;
+			sourceTree = "<group>";
+		};
+		1902FF67977ED43852104A70 /* Spawning */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AF1323742F68A32549FD2 /* ProjectileSpawningController.swift */,
+			);
+			path = Spawning;
+			sourceTree = "<group>";
+		};
+		1B1F209F5425BE717F5884A7 /* GameRules */ = {
+			isa = PBXGroup;
+			children = (
+				5C518C17680D8D0C7F23F9FA /* Configurators */,
+				28F2638CA44FD7A6DD0506DC /* Builders */,
+				E5329B6558E48B7C8404F634 /* Components */,
+				82555ED6EE6C9E1FDCFEC328 /* Controllers */,
+			);
+			path = GameRules;
+			sourceTree = "<group>";
+		};
+		28F2638CA44FD7A6DD0506DC /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				21E4B00CDE9438C7155F58F0 /* RulesContentBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		2B6E25D615F3CE1B9C7A0331 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2B024B080F708F02DA040 /* WelcomeScreenAnimationCoordinator.swift */,
+				B74B57B723E2E36E8D73184C /* WelcomeMetricsDataProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CDCD2C95039CF1409E54A94 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7321906238D8677C2D44F167 /* ViewComponentProtocols.swift */,
+				E2FFA99EB6A6FB09E7B5783B /* GameplayProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3401395AC9C59026F5FC9F58 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70F19D2A880055230F63AE6B /* ModeSelectionUIComponents.swift */,
+				2DFFB42D499670B708A3537B /* CategoryTilePanel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		360D330A275F7DD78293D63D /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3717473317A9E13985FC1F1B /* GameSessionCoordinator.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		364D29A298CC3AC15A6DB994 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B34D21F194DD08CF7A75B5D9 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A74BED95F2D7559549C91DF /* Scoring */ = {
+			isa = PBXGroup;
+			children = (
+				0E944D8C295277051EB9C750 /* ScoringProcessingEngine.swift */,
+			);
+			path = Scoring;
+			sourceTree = "<group>";
+		};
+		3D8F3EA92D24D8C7B1BA1033 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8996397CBC0AC71815917921 /* GameSessionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		43B0BD0A678DAA4B4367432C /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				781719C472AAA97BFBD7772A /* GameplayOrchestrator.swift */,
+			);
+			path = GameEngine;
+			sourceTree = "<group>";
+		};
+		4686EFF7B7958E753CD9E37C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F91AE8F50C56C4DE81C8B2BD /* RecordsAnimationController.swift */,
+				115DD621287B061F45D19EFD /* MatchHistoriesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		470172ED35BB6EECA4963E59 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				E430AA43EE64CA2149B0DF0D /* WelcomeScreenConfigurators.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		481D116A5A3D5B9FEEA13C6D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				6E770D7EAE0CDBFA5FDB5680 /* MotionEffectsCoordinator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		4927BCE5F79EB98F5718A1C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69DA4619761042F3E7089260 /* ModeSelectionAnimationController.swift */,
+				50BBE448AF278716DD16B012 /* CategoryPickerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49288D48BF39DDD9E2285FFE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				03250F4553A8D99BF20A781D /* Repository */,
+				E39AAF7BE52386F330294940 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5C518C17680D8D0C7F23F9FA /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				38181470A1D6A5172281CC5D /* RulesScreenConfigurators.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		5C6A36B65E2BAA888EBBDEFF /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				3B836875D0B40FBE0C79E2FE /* ModeSelectionConfigurators.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		659D9A2892789382D9AE91DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84DB6013845A0EAA9A09405C /* BackgroundSceneRenderer.swift */,
+				D049E95BEB48EFF290E8695F /* GameOverlayPresentationController.swift */,
+				76521566053DDC40A6BB1FC7 /* PlayZoneContainerView.swift */,
+				DD6BC9A073FBA05E8A21BD90 /* GameControlButtonsManager.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6B03812B8847563718247723 /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				7C73C29F6422FD379B5B318E /* TouchFeedbackController.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		70C034C4259CB5171958FC44 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B7789CA3C5612A0F93684D15 /* WelcomeUIComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		72ECD34CC9B83242DE3D1D34 /* GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				F59E5C52AEE6C6208C7210A4 /* ProjectileEntityController.swift */,
+				D4AAC22271CCF192ACA79ADD /* BlockEntityController.swift */,
+			);
+			path = GameLogic;
+			sourceTree = "<group>";
+		};
+		74E4A1C2655F89C6A6A78A7E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B7E68BEF67B9A732CB7BF7AA /* CoordinatorBase.swift */,
+				F84341B672F456A537E80804 /* ApplicationEnvironment.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		82555ED6EE6C9E1FDCFEC328 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01889D28AC0CF30D56DFA442 /* GuidelinesDisplayController.swift */,
+				E6B8DAE0F8966D9370BC9411 /* RulesAnimationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8515DBCC5BC11F83446B468E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1902FF67977ED43852104A70 /* Spawning */,
+				43B0BD0A678DAA4B4367432C /* GameEngine */,
+				3A74BED95F2D7559549C91DF /* Scoring */,
+				CBBE40983ABBE9FDD3C9B11B /* Collision */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		915A2B1517077F7281514D19 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				71EF4E27CBA1D37BEBA888AE /* GameplayConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		976F76435C2E56D64C8B6A28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +440,24 @@
 				E8E14EF658B02203784168D0 /* Pods-Beamway.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		97D0465FE093151832E7C6B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AF9D04BD4C396D232BB737B /* GreetingPanelController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		981F883F7A7E26CD947CA562 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				46A17E124659F7E799B1D58F /* PlayZoneConfigurator.swift */,
+				C7E240E0B24344CBF77FB382 /* BackdropConfigurator.swift */,
+				CEB35852110F18A5C78B2EBF /* FooterControlsConfigurator.swift */,
+			);
+			path = Configurators;
 			sourceTree = "<group>";
 		};
 		A848E9A9450285F163CB3DA0 /* Frameworks */ = {
@@ -88,11 +470,111 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BBE15167B8B0119FC8036489 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3E703D5CF393AFF9F1D29D24 /* VisualThemeConfiguration.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		BE6080D7E58C506448823FE0 /* ModeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5C6A36B65E2BAA888EBBDEFF /* Configurators */,
+				3401395AC9C59026F5FC9F58 /* Components */,
+				4927BCE5F79EB98F5718A1C8 /* Controllers */,
+			);
+			path = ModeSelection;
+			sourceTree = "<group>";
+		};
+		CA294BC9D722863AD45BBD67 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				481D116A5A3D5B9FEEA13C6D /* Animation */,
+				BBE15167B8B0119FC8036489 /* Theme */,
+				6B03812B8847563718247723 /* Haptic */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CBBE40983ABBE9FDD3C9B11B /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				525E65D9EB147F9E4D20BE93 /* CollisionProcessingEngine.swift */,
+			);
+			path = Collision;
+			sourceTree = "<group>";
+		};
+		D03CB2CA097F1246F152D1BD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1D169758000FCBD6167B86D7 /* RecordsUIComponents.swift */,
+				8516062E7819248FFEC17F36 /* MatchHistoryItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DD54E601426F5167B6DC8922 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				915A2B1517077F7281514D19 /* Constants */,
+				74E4A1C2655F89C6A6A78A7E /* Foundation */,
+				364D29A298CC3AC15A6DB994 /* Extensions */,
+				2CDCD2C95039CF1409E54A94 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E0B08767E093A18C46B1026C /* MainGame */ = {
+			isa = PBXGroup;
+			children = (
+				659D9A2892789382D9AE91DD /* UI */,
+				981F883F7A7E26CD947CA562 /* Configurators */,
+				72ECD34CC9B83242DE3D1D34 /* GameLogic */,
+				FE087DE58BBADCAFE0E976ED /* Controllers */,
+				074BE1466775B03097CF671F /* HUD */,
+				360D330A275F7DD78293D63D /* Session */,
+			);
+			path = MainGame;
+			sourceTree = "<group>";
+		};
+		E39AAF7BE52386F330294940 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F4919B4126FF2A549AA8F8A /* SessionResultDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5329B6558E48B7C8404F634 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70B579693E4441FF61A63C68 /* RulesUIComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E63819B3B8C323C3431C4161 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				561051C5CAAEEAFE0CA31F30 /* RecordsScreenConfigurators.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		F060F286844E4A03DAFDCAD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93B6AB515E2C0E069FD7519D /* RecordsDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FE052CF02EFE8C910061138D /* GameRecord */ = {
 			isa = PBXGroup;
 			children = (
 				FE4866812EFD6E0F00461C05 /* GameRecordManager.swift */,
-				FE4866822EFD6E0F00461C05 /* GameRecordsViewController.swift */,
 			);
 			path = GameRecord;
 			sourceTree = "<group>";
@@ -100,7 +582,6 @@
 		FE052CF12EFE8C940061138D /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				FE4866872EFD6E0F00461C05 /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -108,7 +589,6 @@
 		FE052CF22EFE8C960061138D /* MainGame */ = {
 			isa = PBXGroup;
 			children = (
-				FE4866852EFD6E0F00461C05 /* MainGameViewController.swift */,
 			);
 			path = MainGame;
 			sourceTree = "<group>";
@@ -116,7 +596,6 @@
 		FE052CF32EFE8CAD0061138D /* GameRules */ = {
 			isa = PBXGroup;
 			children = (
-				FE4866832EFD6E0F00461C05 /* GameRulesViewController.swift */,
 			);
 			path = GameRules;
 			sourceTree = "<group>";
@@ -124,9 +603,22 @@
 		FE052CF42EFE8CC60061138D /* ModeSelection */ = {
 			isa = PBXGroup;
 			children = (
-				FE4866802EFD6E0F00461C05 /* GameModeSelectionViewController.swift */,
 			);
 			path = ModeSelection;
+			sourceTree = "<group>";
+		};
+		FE087DE58BBADCAFE0E976ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8069D670742D22B29C1B4405 /* GameLogicController.swift */,
+				33F9F0BE267A7563D01AECD4 /* GameVisualEffectsCoordinator.swift */,
+				B7A3FC80D8CCF3415FA85C10 /* CollisionDetectionEngine.swift */,
+				F75DEE88E2E009DE0BD3F268 /* PlaySessionController.swift */,
+				A1197427A231748E370D2049 /* GameOverPresentationController.swift */,
+				48B186F38FF3E373DEE7BE22 /* PauseOverlayController.swift */,
+				659B3AD5300E76FDD561CC6E /* GameHUDManager.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FE4866452EFC297B00461C05 = {
@@ -166,6 +658,16 @@
 				FE052CF12EFE8C940061138D /* Welcome */,
 				FE052CF32EFE8CAD0061138D /* GameRules */,
 				FE052CF42EFE8CC60061138D /* ModeSelection */,
+				DD54E601426F5167B6DC8922 /* Core */,
+				49288D48BF39DDD9E2285FFE /* Data */,
+				CA294BC9D722863AD45BBD67 /* Managers */,
+				8515DBCC5BC11F83446B468E /* Services */,
+				3D8F3EA92D24D8C7B1BA1033 /* ViewModels */,
+				E0B08767E093A18C46B1026C /* MainGame */,
+				17828335D0236F1EC2653CA8 /* GameRecord */,
+				BE6080D7E58C506448823FE0 /* ModeSelection */,
+				013D769AEF7CD1EABBE6FAD5 /* Welcome */,
+				1B1F209F5425BE717F5884A7 /* GameRules */,
 			);
 			path = Beamway;
 			sourceTree = "<group>";
@@ -292,17 +794,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE48667A2EFC299900461C05 /* Beamway.xcdatamodeld in Sources */,
-				FE4866882EFD6E0F00461C05 /* WelcomeViewController.swift in Sources */,
 				FE4866892EFD6E0F00461C05 /* ArrowProjectileView.swift in Sources */,
-				FE48668A2EFD6E0F00461C05 /* GameRecordsViewController.swift in Sources */,
-				FE48668B2EFD6E0F00461C05 /* GameModeSelectionViewController.swift in Sources */,
 				FE48668C2EFD6E0F00461C05 /* GameRecordManager.swift in Sources */,
 				FE48668D2EFD6E0F00461C05 /* CustomBackButton.swift in Sources */,
 				FE48668E2EFD6E0F00461C05 /* AppDelegate.swift in Sources */,
-				FE48668F2EFD6E0F00461C05 /* GameRulesViewController.swift in Sources */,
 				FE4866902EFD6E0F00461C05 /* MahjongTileView.swift in Sources */,
-				FE4866912EFD6E0F00461C05 /* MainGameViewController.swift in Sources */,
 				FE4866922EFD6E0F00461C05 /* SceneDelegate.swift in Sources */,
+				86F787B4F5B823C7BEFEACF2 /* GameplayConstants.swift in Sources */,
+				A46DC262699BC79C172D0074 /* CoordinatorBase.swift in Sources */,
+				4BBDDF746D18F6EFDB3111A8 /* ApplicationEnvironment.swift in Sources */,
+				38FC6C3EDCC893438C0E9E28 /* UIViewExtensions.swift in Sources */,
+				76619C24E49E358AB4EA0305 /* ViewComponentProtocols.swift in Sources */,
+				6A126A9F2597CDA3EB47D23F /* GameplayProtocols.swift in Sources */,
+				D9E2E20C7BEC432F1CA4786D /* SessionRecordRepository.swift in Sources */,
+				6C6BEA2B2DBB19C0C0D6C7F3 /* SessionResultDataModel.swift in Sources */,
+				512A80DC60D52E07A052EF4A /* MotionEffectsCoordinator.swift in Sources */,
+				CEBEFEA9021401A0CAFD21AB /* VisualThemeConfiguration.swift in Sources */,
+				04C99B3A6FCC22139FCF4104 /* TouchFeedbackController.swift in Sources */,
+				6D732CB9C93032BE60763785 /* ProjectileSpawningController.swift in Sources */,
+				A7026F672A6247C283E94B66 /* GameplayOrchestrator.swift in Sources */,
+				4E5093B56852F8ED9AD8B439 /* ScoringProcessingEngine.swift in Sources */,
+				0C7BE9B5470AF9CC8C4020E2 /* CollisionProcessingEngine.swift in Sources */,
+				9B9B3AB8BE04A2694E8CD2B0 /* GameSessionViewModel.swift in Sources */,
+				8B620C75749EF6BC9F3176AF /* BackgroundSceneRenderer.swift in Sources */,
+				CCE06AEEFD744AE1A0E651EF /* GameOverlayPresentationController.swift in Sources */,
+				4D32B5BE07B518CD682690ED /* PlayZoneContainerView.swift in Sources */,
+				6197DA2C0C23105AF8983D98 /* GameControlButtonsManager.swift in Sources */,
+				EE97173BE0DB7F36171B890D /* PlayZoneConfigurator.swift in Sources */,
+				195870734F8A65E01A253F9C /* BackdropConfigurator.swift in Sources */,
+				A02734F4C8DD3691C0744BA0 /* FooterControlsConfigurator.swift in Sources */,
+				4E8A7F8AFC6B0A115263CE4F /* ProjectileEntityController.swift in Sources */,
+				9249CEC7E08F3BE886658021 /* BlockEntityController.swift in Sources */,
+				83750D66CEDC995126729C8F /* GameLogicController.swift in Sources */,
+				60778FFEBC780FB6B2910552 /* GameVisualEffectsCoordinator.swift in Sources */,
+				2B2D2F6C6D6880FF0DE1E2D3 /* CollisionDetectionEngine.swift in Sources */,
+				D9A615FE87AFA8FE85267A33 /* PlaySessionController.swift in Sources */,
+				706A85457B039816198A28D0 /* GameOverPresentationController.swift in Sources */,
+				288C5F441E5FBAFA80221D22 /* PauseOverlayController.swift in Sources */,
+				FD4DB9C2318835C318137893 /* GameHUDManager.swift in Sources */,
+				3BE8C746271B69BC31C840EA /* SessionHeadsUpDisplayManager.swift in Sources */,
+				C83C68F3E71D74C5D12D50D0 /* GameSessionCoordinator.swift in Sources */,
+				0D49200A08172E319A2C0519 /* RecordsScreenConfigurators.swift in Sources */,
+				7ACD0D47E642B67FD5B98587 /* RecordsUIComponents.swift in Sources */,
+				D5CFF41E16D67F6EF3DC1040 /* MatchHistoryItem.swift in Sources */,
+				8870479CD47CAC5F4C9349B9 /* RecordsAnimationController.swift in Sources */,
+				7F0F7A83E7A38625C73A34AB /* MatchHistoriesController.swift in Sources */,
+				3FF1FE5EEF40D93493501FD5 /* RecordsDataManager.swift in Sources */,
+				C9A6736CE741F6F264E2FB30 /* ModeSelectionConfigurators.swift in Sources */,
+				AAC6EB40AF93D2E9D56206A8 /* ModeSelectionUIComponents.swift in Sources */,
+				85F89D74B3688B42E2B8B5F1 /* CategoryTilePanel.swift in Sources */,
+				8E389F1D64A73E8D0F39FD86 /* ModeSelectionAnimationController.swift in Sources */,
+				9239E59A64F963233E1C0766 /* CategoryPickerController.swift in Sources */,
+				82B7F5C31560798767EBFE21 /* WelcomeScreenConfigurators.swift in Sources */,
+				FAE3DC2773A84ED649E4BFBF /* WelcomeUIComponents.swift in Sources */,
+				AE60CAEDACE12A265DF01209 /* GreetingPanelController.swift in Sources */,
+				1F8F6A24C5D8D2A4481DD50F /* WelcomeScreenAnimationCoordinator.swift in Sources */,
+				A3C32F64CB64B35852E8C6F7 /* WelcomeMetricsDataProvider.swift in Sources */,
+				4B3D361E60290839854E7923 /* RulesScreenConfigurators.swift in Sources */,
+				4422DF0FA4D3CD0F6A2FE3B1 /* RulesContentBuilder.swift in Sources */,
+				5142876160C4AB206AADD152 /* RulesUIComponents.swift in Sources */,
+				231CB71174C46BB3551FE0C3 /* GuidelinesDisplayController.swift in Sources */,
+				DBAEAE5726E5F21B33736751 /* RulesAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bws.Beamway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -396,7 +948,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bws.Beamway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

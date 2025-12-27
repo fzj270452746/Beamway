@@ -1,5 +1,5 @@
 //
-//  ArrowProjectileView.swift
+//  DartMissilePanel.swift
 //  Beamway
 //
 //  Created by Zhao on 2025/12/24.
@@ -7,128 +7,128 @@
 
 import UIKit
 
-enum ArrowDirection {
-    case top
-    case bottom
-    case left
-    case right
+enum DartOrientation {
+    case upper
+    case lower
+    case leftward
+    case rightward
 }
 
-class ArrowProjectileView: UIView {
-    
-    let direction: ArrowDirection
-    var arrowIdentifier: String
-    
-    init(direction: ArrowDirection, identifier: String = UUID().uuidString) {
-        self.direction = direction
-        self.arrowIdentifier = identifier
-        
+class DartMissilePanel: UIView {
+
+    let orientation: DartOrientation
+    var dartUniqueId: String
+
+    init(orientation: DartOrientation, uniqueId: String = UUID().uuidString) {
+        self.orientation = orientation
+        self.dartUniqueId = uniqueId
+
         super.init(frame: .zero)
-        
-        setupArrowView()
+
+        configureDartPanel()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private func setupArrowView() {
+
+    private func configureDartPanel() {
         backgroundColor = .clear
-        
+
         // Create arrow shape using CAShapeLayer
-        let arrowPath = createArrowPath()
-        let arrowLayer = CAShapeLayer()
-        arrowLayer.path = arrowPath.cgPath
+        let dartRoute = generateDartRoute()
+        let dartShape = CAShapeLayer()
+        dartShape.path = dartRoute.cgPath
         // Use a more vibrant red color for better visibility
-        arrowLayer.fillColor = UIColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 1.0).cgColor
-        arrowLayer.strokeColor = UIColor.white.cgColor
-        arrowLayer.lineWidth = 2.5
-        
-        layer.addSublayer(arrowLayer)
-        
+        dartShape.fillColor = UIColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 1.0).cgColor
+        dartShape.strokeColor = UIColor.white.cgColor
+        dartShape.lineWidth = 2.5
+
+        layer.addSublayer(dartShape)
+
         // Add enhanced glow effect for better visibility against background
         layer.shadowColor = UIColor(red: 1.0, green: 0.3, blue: 0.3, alpha: 1.0).cgColor
         layer.shadowRadius = 10
         layer.shadowOpacity = 0.9
         layer.shadowOffset = .zero
     }
-    
-    private func createArrowPath() -> UIBezierPath {
-        let path = UIBezierPath()
-        let width = bounds.width > 0 ? bounds.width : 30
-        let height = bounds.height > 0 ? bounds.height : 30
-        
-        switch direction {
-        case .top:
+
+    private func generateDartRoute() -> UIBezierPath {
+        let route = UIBezierPath()
+        let breadth = bounds.width > 0 ? bounds.width : 30
+        let altitude = bounds.height > 0 ? bounds.height : 30
+
+        switch orientation {
+        case .upper:
             // Arrow from top moving down - arrow should point downward (tip at bottom)
-            path.move(to: CGPoint(x: width / 2, y: height))
-            path.addLine(to: CGPoint(x: 0, y: height * 0.7))
-            path.addLine(to: CGPoint(x: width / 4, y: height * 0.7))
-            path.addLine(to: CGPoint(x: width / 4, y: 0))
-            path.addLine(to: CGPoint(x: width * 3 / 4, y: 0))
-            path.addLine(to: CGPoint(x: width * 3 / 4, y: height * 0.7))
-            path.addLine(to: CGPoint(x: width, y: height * 0.7))
-            path.close()
-        case .bottom:
+            route.move(to: CGPoint(x: breadth / 2, y: altitude))
+            route.addLine(to: CGPoint(x: 0, y: altitude * 0.7))
+            route.addLine(to: CGPoint(x: breadth / 4, y: altitude * 0.7))
+            route.addLine(to: CGPoint(x: breadth / 4, y: 0))
+            route.addLine(to: CGPoint(x: breadth * 3 / 4, y: 0))
+            route.addLine(to: CGPoint(x: breadth * 3 / 4, y: altitude * 0.7))
+            route.addLine(to: CGPoint(x: breadth, y: altitude * 0.7))
+            route.close()
+        case .lower:
             // Arrow from bottom moving up - arrow should point upward (tip at top)
-            path.move(to: CGPoint(x: width / 2, y: 0))
-            path.addLine(to: CGPoint(x: 0, y: height * 0.3))
-            path.addLine(to: CGPoint(x: width / 4, y: height * 0.3))
-            path.addLine(to: CGPoint(x: width / 4, y: height))
-            path.addLine(to: CGPoint(x: width * 3 / 4, y: height))
-            path.addLine(to: CGPoint(x: width * 3 / 4, y: height * 0.3))
-            path.addLine(to: CGPoint(x: width, y: height * 0.3))
-            path.close()
-        case .left:
+            route.move(to: CGPoint(x: breadth / 2, y: 0))
+            route.addLine(to: CGPoint(x: 0, y: altitude * 0.3))
+            route.addLine(to: CGPoint(x: breadth / 4, y: altitude * 0.3))
+            route.addLine(to: CGPoint(x: breadth / 4, y: altitude))
+            route.addLine(to: CGPoint(x: breadth * 3 / 4, y: altitude))
+            route.addLine(to: CGPoint(x: breadth * 3 / 4, y: altitude * 0.3))
+            route.addLine(to: CGPoint(x: breadth, y: altitude * 0.3))
+            route.close()
+        case .leftward:
             // Arrow from left moving right - arrow should point rightward (tip at right)
-            path.move(to: CGPoint(x: width, y: height / 2))
-            path.addLine(to: CGPoint(x: width * 0.3, y: 0))
-            path.addLine(to: CGPoint(x: width * 0.3, y: height / 4))
-            path.addLine(to: CGPoint(x: 0, y: height / 4))
-            path.addLine(to: CGPoint(x: 0, y: height * 3 / 4))
-            path.addLine(to: CGPoint(x: width * 0.3, y: height * 3 / 4))
-            path.addLine(to: CGPoint(x: width * 0.3, y: height))
-            path.close()
-        case .right:
+            route.move(to: CGPoint(x: breadth, y: altitude / 2))
+            route.addLine(to: CGPoint(x: breadth * 0.3, y: 0))
+            route.addLine(to: CGPoint(x: breadth * 0.3, y: altitude / 4))
+            route.addLine(to: CGPoint(x: 0, y: altitude / 4))
+            route.addLine(to: CGPoint(x: 0, y: altitude * 3 / 4))
+            route.addLine(to: CGPoint(x: breadth * 0.3, y: altitude * 3 / 4))
+            route.addLine(to: CGPoint(x: breadth * 0.3, y: altitude))
+            route.close()
+        case .rightward:
             // Arrow from right moving left - arrow should point leftward (tip at left)
-            path.move(to: CGPoint(x: 0, y: height / 2))
-            path.addLine(to: CGPoint(x: width * 0.7, y: 0))
-            path.addLine(to: CGPoint(x: width * 0.7, y: height / 4))
-            path.addLine(to: CGPoint(x: width, y: height / 4))
-            path.addLine(to: CGPoint(x: width, y: height * 3 / 4))
-            path.addLine(to: CGPoint(x: width * 0.7, y: height * 3 / 4))
-            path.addLine(to: CGPoint(x: width * 0.7, y: height))
-            path.close()
+            route.move(to: CGPoint(x: 0, y: altitude / 2))
+            route.addLine(to: CGPoint(x: breadth * 0.7, y: 0))
+            route.addLine(to: CGPoint(x: breadth * 0.7, y: altitude / 4))
+            route.addLine(to: CGPoint(x: breadth, y: altitude / 4))
+            route.addLine(to: CGPoint(x: breadth, y: altitude * 3 / 4))
+            route.addLine(to: CGPoint(x: breadth * 0.7, y: altitude * 3 / 4))
+            route.addLine(to: CGPoint(x: breadth * 0.7, y: altitude))
+            route.close()
         }
-        
-        return path
+
+        return route
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+
         // Update arrow path when bounds change
         layer.sublayers?.forEach { $0.removeFromSuperlayer() }
-        let arrowPath = createArrowPath()
-        let arrowLayer = CAShapeLayer()
-        arrowLayer.path = arrowPath.cgPath
-        arrowLayer.fillColor = UIColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 1.0).cgColor
-        arrowLayer.strokeColor = UIColor.white.cgColor
-        arrowLayer.lineWidth = 2.5
-        layer.addSublayer(arrowLayer)
+        let dartRoute = generateDartRoute()
+        let dartShape = CAShapeLayer()
+        dartShape.path = dartRoute.cgPath
+        dartShape.fillColor = UIColor(red: 1.0, green: 0.2, blue: 0.2, alpha: 1.0).cgColor
+        dartShape.strokeColor = UIColor.white.cgColor
+        dartShape.lineWidth = 2.5
+        layer.addSublayer(dartShape)
     }
-    
-    func animateArrowLaunch(from startPoint: CGPoint, to endPoint: CGPoint, duration: TimeInterval, completion: @escaping () -> Void) {
-        center = startPoint
+
+    func executeLaunchMotion(from origin: CGPoint, to terminus: CGPoint, interval: TimeInterval, finishHandler: @escaping () -> Void) {
+        center = origin
         alpha = 0
-        
+
         UIView.animate(withDuration: 0.2, animations: {
             self.alpha = 1.0
         }) { _ in
-            UIView.animate(withDuration: duration, delay: 0, options: .curveLinear, animations: {
-                self.center = endPoint
+            UIView.animate(withDuration: interval, delay: 0, options: .curveLinear, animations: {
+                self.center = terminus
             }) { _ in
-                completion()
+                finishHandler()
             }
         }
     }

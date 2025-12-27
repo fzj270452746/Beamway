@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild:*)",
+      "Bash(tree:*)",
+      "Bash(mkdir -p:*)",
+      "Bash(ruby -e \"require ''xcodeproj''\")",
+      "Bash(ruby add_files_to_project.rb:*)",
+      "Bash(pod install)",
+      "Bash(LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 pod install:*)"
+    ]
+  }
+}
